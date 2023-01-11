@@ -1,0 +1,111 @@
+.widget-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.widget-user__image {
+    display: flex;
+}
+
+.widget-user__left {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+}
+
+.widget-user__left h2 {
+    color: var(--text-primary-color);
+    font-size: 1rem;
+    margin-bottom: .7rem;
+}
+
+.widget-user__info__header p,
+.widget-user__left p {
+    color: #777;
+}
+
+.widget-user__image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widget-user:not(:last-child) {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+/*user show info*/
+.widget-user_a {
+    padding: 1rem;
+}
+
+.widget-user__info__close {
+    position: absolute;
+    right: .5rem;
+    top: 0;
+    width: auto!important;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    line-height: 100%;
+}
+
+.widget-user__info {
+    width: 100%;
+}
+
+.widget-user__info__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.widget-user__info__header img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.widget-user__info__header h2 {
+    color: var(--text-primary-color);
+    font-size: 1.5rem;
+    margin: .7rem 0;
+}
+
+.widget-user__info__body {
+    padding: 2rem 0;
+}
+
+.widget-user__info__body span {
+    font-weight: 600;
+    min-width: 70px;
+    display: inline-block;
+}
+
+.widget-user__info__body p {
+    display: inline-block;
+}
+
+.widget-user__info__body a {
+    text-decoration: underline;
+    color: #4a3ecc;
+    transition: all .3s ease;
+}
+
+.widget-user__info__body a:hover {
+    color: #261aad;
+}
+
+.widget-user__info__body div {
+    margin-bottom: 1.5rem;
+}
+/*END user show info*/

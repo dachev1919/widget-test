@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --primary-color: rgb(64, 56, 183);
+    --secondary-color: rgb(45, 36, 147);
+    --background-color: rgb(252, 252, 252);
+    --text-primary-color: rgb(4, 6, 22);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fff;
+    border-color: #b2b2b2;
 }
+
+::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: #3a3a3a;
+}
+::-webkit-scrollbar-track {
+    border-color: #b2b2b2;
+    background-color: #fff;
+}
+
+/* reset default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* base style */
+body {
+    background: var(--background-color);
+    font-family: "Istok Web", sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    transition: all .3s ease;
+}
+
+a:hover {
+    color: inherit;
+}
+
+h1,
+h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/*duplicate classes*/
+
+.btn {
+    transition: all .3s ease;
+    border-radius: 5px;
+    padding: .7rem .7rem;
+    outline: none;
+    line-height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: .03em;
+    border: 1px solid;
+    font-weight: 500;
+}
+
+.btn__primary {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.view-all {
+    background: #fff;
+    color: var(--text-primary-color);
+    border-color: #bebebe;
+}
+
+.view-all:hover {
+    background: #f8f8f8;
+}
+
+@media screen and (max-width: 1920px) {
+    .btn:not(.without-responsive) {
+        font-size: calc(0.7rem + (1 - 0.7) * ((100vw - 20rem) / (120 - 20)));
+        padding: calc(0.4rem + (0.7 - 0.4) * ((100vw - 20rem) / (120 - 20))) calc(.6rem + (.7 - .6) * ((100vw - 20rem) / (120 - 20)));
+    }
+}
+/*END duplicate classes*/

@@ -1,0 +1,28 @@
+.widget__wrapper {
+    padding: 1rem;
+}
+
+.widget {
+    margin: 0 auto;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #e3e3e3;
+    position: relative;
+}
+
+.widget__body {
+    min-height: 250px;
+}
+
+.widget .widget__footer {
+    padding: 1rem;
+}
+
+.widget .widget__footer {
+    border-top: 1px solid #e3e3e3;
+}
+
+.widget button {
+    width: 100%;
+}
